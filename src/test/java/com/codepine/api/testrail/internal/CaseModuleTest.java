@@ -48,7 +48,7 @@ import static org.junit.Assert.assertEquals;
 public class CaseModuleTest {
 
     private static final ObjectMapper objectMapper = new ObjectMapper()
-            .setPropertyNamingStrategy(PropertyNamingStrategy.CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES)
+            .setPropertyNamingStrategy(PropertyNamingStrategy.SNAKE_CASE)
             .disable(SerializationFeature.FAIL_ON_EMPTY_BEANS)
             .registerModules(new CaseModule(), new UnixTimestampModule());
 
