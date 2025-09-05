@@ -32,7 +32,7 @@ import com.fasterxml.jackson.databind.*;
 import com.google.common.base.Charsets;
 import com.google.common.io.ByteStreams;
 import lombok.NonNull;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
 import javax.xml.bind.DatatypeConverter;
 import java.io.*;
@@ -49,7 +49,7 @@ import java.util.regex.Pattern;
 /**
  * TestRail request.
  */
-@Log4j
+@Log4j2
 public abstract class Request<T> {
 
     private static final UrlConnectionFactory DEFAULT_URL_CONNECTION_FACTORY = new UrlConnectionFactory();
